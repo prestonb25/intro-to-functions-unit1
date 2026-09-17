@@ -58,10 +58,17 @@ turtle.done() """
 equal(200) 
 turtle.done() """
 
-sidelength = 100
-rotate = 90
-def square(x,y):
-    for i in range(4):
-        t.forward(x)
-        t.left(y)
-triangle(100,90)
+def square(x):
+    t.forward(x)
+    t.left(90)
+    t.forward(x)
+    t.left(90)
+    t.forward(x)
+    t.left(90)
+    t.forward(x)
+    t.left(90)
+
+for i in range (60):
+    square (100)
+    t.right (5)
+    t.speed(100)
