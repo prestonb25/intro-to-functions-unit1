@@ -58,7 +58,7 @@ turtle.done() """
 equal(200) 
 turtle.done() """
 
-def square(x):
+""" def square(x):
     t.forward(x)
     t.left(90)
     t.forward(x)
@@ -68,7 +68,27 @@ def square(x):
     t.forward(x)
     t.left(90)
 
+t.speed (100)
 for i in range (60):
-    square (100)
-    t.right (5)
-    t.speed(100)
+    square (200)
+    t.right (5) """
+
+
+t. speed (100)
+def square(x):
+    t.forward(x)
+    t.left(90)
+    t.forward(x)
+    t.left(90)
+    t.forward(x)
+    t.left(90)
+    t.forward(x)
+    t.left(90)
+square(200)
+def addSquares(iRange):
+    length = 25
+    for i in range(iRange):
+        square(length)
+        length += 25
+addSquares(5)
+turtle.done
