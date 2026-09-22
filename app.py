@@ -3,6 +3,7 @@ from turtle import *
 t = Turtle()
 
 t.shape('turtle')
+t.speed(100)
 
 """ t.forward(100) """
 """ def square(x):
@@ -73,7 +74,7 @@ for i in range (60):
     square (200)
     t.right (5) """
 
-
+""" 
 t. speed (100)
 def square(x):
     t.forward(x)
@@ -91,4 +92,36 @@ def addSquares(iRange):
         square(length)
         length += 25
 addSquares(5)
-turtle.done
+turtle.done """
+
+
+""" def square(x):
+    t.forward(x)
+    t.left(90)
+    t.forward(x)
+    t.left(90)
+    t.forward(x)
+    t.left(90)
+    t.forward(x)
+    t.left(90)
+length = 5
+for i in range (60):
+    square(length)
+    length += 5
+    t.right (5)
+
+turtle.done() """
+
+def star(x):
+    for i in range(5):
+        t.forward(x)
+        t.right(144)
+
+def addStars(iRange):
+    length = 25
+    for i in range(iRange):
+       addStars(length,144)
+    length += 5
+    addStars (5)
+
+turtle.done()
