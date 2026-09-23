@@ -116,12 +116,10 @@ def star(x):
     for i in range(5):
         t.forward(x)
         t.right(144)
-
-def addStars(iRange):
-    length = 25
-    for i in range(iRange):
-       addStars(length,144)
+length = 25
+for i in range(60):
+    star(length)
     length += 5
-    addStars (5)
+    t.right(5)
 
 turtle.done()
